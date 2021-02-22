@@ -1,0 +1,31 @@
+// font sizes ------------------------------------
+.fz-extra-small{ font-size: 1.2rem; }
+.fz-small{ font-size: 1.4rem; }
+.fz-normal{ font-size: 1.6rem; }
+.fz-large{ font-size: 2rem; }
+.fz-extra-large{ font-size: 2.4rem; }
+// colors ------------------------------------
+
+.text-black{ color: var(--color-black); }
+.text-theme{ color: var(--color-theme); }
+
+.facebook {background-color: var(--facebook); }
+.twitter {background-color: var(--twitter); }
+.linkedIn {background-color: var(--linkedIn); }
+.skype {background-color: var(--skype); }
+.youtube { background-color: var(--youtube);}
+
+.hover-text-black:hover{ color: var(--color-black); }
+.hover-text-dark:hover{ color: var(--color-dark); }
+.hover-text-white:hover{ color: var(--color-white); }
+.hover-text-theme:hover{ color: var(--color-theme); }
+
+.bg-black{ background-color: var(--color-black); }
+.bg-theme{ background-color: var(--color-theme); }
+
+.hover-bg-dark:hover{ background-color: var(--color-dark); }
+.hover-bg-black:hover{ background-color: var(--color-black); }
+.hover-bg-white:hover{ background-color: var(--color-white); }
+.hover-bg-theme:hover{ background-color: var(--color-theme); }
+
+.l-height-small { line-height: 136%; }

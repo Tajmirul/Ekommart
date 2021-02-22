@@ -1,0 +1,43 @@
+.heading {
+    a {
+        text-decoration: none;
+        display: block;
+    }
+
+    &--section {
+        margin-bottom: 3rem;
+        font-size: 4rem;
+        font-weight: 300;
+        text-align: center;
+    }
+    
+    &--primary {
+        font-size: 4rem;
+        font-weight: 300;
+    }
+    
+    &--secondary {
+        font-weight: 500;
+        font-size: 3.4rem;
+    }
+    
+    &--tertiary {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+    
+    &--tertiary--2 {
+        font-weight: 700;
+        font-size: 1.4rem;
+    }
+
+    &:hover {
+        a {
+            color: var(--color-primary);
+        }
+    }
+}
+
+.banner__subtitle {
+
+}

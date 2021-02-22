@@ -1,0 +1,28 @@
+.form {
+    &__input {
+        border: 1px solid transparent;
+        outline: none;
+        transition: .2s;
+        padding: 1rem 2.5rem;
+        font-size: 1.5rem;
+        width: 100%;
+
+        &--select {
+            border-right: var(--border-light);
+            width: auto;
+        }
+
+        // &:focus {
+        //     border-color: var(--color-primary);
+        // }
+    }
+
+    &--search {
+        display: flex;
+        align-items: center;
+
+        button.button {
+            // height: calc(100% - 1rem);
+        }
+    }
+}

@@ -1,0 +1,57 @@
+// slider 
+.arrows{
+    z-index: 2;
+    background-color: var(--color-primary);
+    color: var(--bs-light);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .1s;
+
+    &.prev{
+        left: 3px;
+    }
+    &.next{
+        right: 2px;
+    }
+
+    &.banner-arrow {
+        height: 9rem;
+        opacity: 0;
+
+        &.prev{
+            left: 0;
+            transform: translate(-100%, -50%);
+        }
+        &.next{
+            right: 0;
+            transform: translate(100%, -50%);
+        }
+
+        &:hover {
+            background-color: var(--color-primary_hover);
+        }
+    }
+}
+
+.slider {
+    overflow: hidden;
+
+    &--banner {
+        &:hover {
+            .arrows {
+                transform: translate(0, -50%);
+                opacity: 1;
+            }
+        }
+    }
+}
+
+

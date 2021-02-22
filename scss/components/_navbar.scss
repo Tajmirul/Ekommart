@@ -1,0 +1,98 @@
+.nav-bar {
+    border-bottom: var(--border-light);
+
+    &__top {
+        padding: 4px 0;
+        background-color: var(--color-dark);
+
+        * {
+            color: var(--bs-light);
+        }
+    }
+
+    &__bottom {
+        .logo-area {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            border-right: var(--border-light);
+
+            .logo {
+                width: 15rem;
+                max-width: 100%;
+            }
+        }
+    }
+
+    &__menu {
+        border-bottom: var(--border-light);
+    }
+
+    &__desktop {
+        padding: 2rem 0;
+
+        ul {
+            li {
+                position: relative;
+                display: inline-block;
+
+                a {
+                    display: block;
+                    font-size: 1.4rem;
+                    text-decoration: none;
+                    padding: 4px 2rem;
+                    font-weight: 700;
+                    color: var(--bs-dark);
+
+                    i {
+                        margin-left: 1rem;
+                    }
+
+                    &:hover,
+                    &:focus,
+                    &.active {
+                        color: var(--color-primary);
+                    }
+                }
+
+                ul {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 14rem;
+                    background-color: var(--color-dark);
+                    z-index: 1;
+                    padding: 1rem 0;
+                    visibility: hidden;
+                    opacity: 0;
+                    transform: translateY(-4px);
+                    transition: .1s;
+
+                    li {
+                        display: block;
+                    }
+
+                    * {
+                        color: var(--bs-light);
+                    }
+                }
+
+                &:hover {
+                    &>a {
+                        color: var(--color-primary);
+                    }
+    
+                    &>ul {
+                        visibility: visible;
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+                }
+            }
+        }
+    }
+
+    &__search-box {
+        // padding: 1rem 0;
+    }
+}

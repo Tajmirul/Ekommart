@@ -1,0 +1,26 @@
+// typography --------------------------
+@import 'typography/variables';
+@import 'typography/resets';
+@import 'typography/mixins';
+@import 'typography/utilites';
+@import 'typography/common';
+
+// layout --------------------------
+@import 'layout/home';
+@import 'layout/header';
+@import 'layout/footer';
+
+// components --------------------------
+@import 'components/buttons';
+@import 'components/heading';
+@import 'components/slider';
+@import 'components/forms';
+@import 'components/all-category';
+@import 'components/social-links';
+@import 'components/banner';
+@import 'components/navbar';
+@import 'components/cart';
+@import 'components/blog';
+@import 'components/ad';
+
+@import 'components/responsive';

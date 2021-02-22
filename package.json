@@ -1,0 +1,31 @@
+{
+  "name": "scss-starter-pack-for-webdesign",
+  "version": "1.0.3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tajmirul/scss-starter-pack-for-design.git"
+  },
+  "keywords": [
+    "scss",
+    "starter-pack",
+    "Tajmirul-scss"
+  ],
+  "author": "Tajmirul Islam Akhand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tajmirul/scss-starter-pack-for-design/issues"
+  },
+  "homepage": "https://github.com/Tajmirul/scss-starter-pack-for-design#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "description": "",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
