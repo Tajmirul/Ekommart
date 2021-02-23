@@ -1,0 +1,33 @@
+.all-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+    overflow-y: auto;
+}
+
+.popup {
+    width: 96%;
+    max-width: 90rem;
+    background-color: var(--bs-white);
+    position: absolute;
+    left: 50%;
+    z-index: 2;
+    border-radius: 3px;
+    padding: 2rem;
+    position: relative;
+    display: none;
+
+    top: 2rem;
+    transform: translate(-50%, 0px);
+
+    &__close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 1.5rem;
+    }
+}

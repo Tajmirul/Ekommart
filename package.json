@@ -3,8 +3,8 @@
   "version": "1.0.3",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch scss -o css"
+    "scss": "node-sass --watch scss -o css --source-map true --source-map-embed true --sourceMapContents true",
+    "postcss:autoprefixer": "postcss --use autoprefixer -b 'last 2 versions' --map"
   },
   "repository": {
     "type": "git",

@@ -1,9 +1,9 @@
 /* google font: Roboto */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
 *,
 *::before,
-*::after{
+*::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -11,11 +11,11 @@
 
 html {
 	scroll-behavior: smooth;
-	font-size: 10px;
+	font-size: 62.5%;
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 img {
@@ -23,15 +23,15 @@ img {
 }
 
 .f-left {
-	float: left
+	float: left;
 }
 
 .f-right {
-	float: right
+	float: right;
 }
 
 .fix {
-	overflow: hidden
+	overflow: hidden;
 }
 
 a,
@@ -56,7 +56,7 @@ a:focus,
 a:hover,
 .portfolio-cat a:hover,
 .footer -menu li a:hover {
-	color: #2B96CC;
+	color: #2b96cc;
 	text-decoration: none;
 }
 
@@ -71,7 +71,7 @@ input:focus,
 input:focus,
 textarea,
 textarea:focus {
-	outline: 0
+	outline: 0;
 }
 
 .uppercase {
@@ -133,7 +133,7 @@ ul {
 	padding: 0;
 
 	li {
-		list-style: none
+		list-style: none;
 	}
 }
 
@@ -157,20 +157,14 @@ label {
 	font-weight: 400;
 }
 
-*::-moz-selection {
-	background: #d6b161;
-	color: #fff;
-	text-shadow: none;
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
 }
 
-::-moz-selection {
-	background: #444;
-	color: #fff;
-	text-shadow: none;
-}
-
-::selection {
-	background: #444;
-	color: #fff;
-	text-shadow: none;
+/* Firefox */
+input[type=number] {
+	-moz-appearance: textfield;
 }
