@@ -1,4 +1,4 @@
-input:not(.not-default) {
+input:not(.not-default), textarea:not(.not-default) {
     border: 2px solid var(--color-border);
     padding: 1rem;
     font-size: 1.5rem;

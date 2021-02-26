@@ -168,3 +168,18 @@ input::-webkit-inner-spin-button {
 input[type=number] {
 	-moz-appearance: textfield;
 }
+
+.br-theme-fontawesome-stars .br-widget a {
+	font-family: "Font Awesome 5 Pro";
+	font-weight: 900;
+	font-size: 2rem;
+	color: #929292;
+
+	&.br-selected, &.br-active {
+		color: #ff9933;
+	}
+
+	&::after {
+		content: '\f005';
+	}
+}

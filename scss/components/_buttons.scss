@@ -5,11 +5,16 @@
     border-radius: 4px;
     text-decoration: none;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    padding: 5px 2rem;
 
     &--theme {
         padding: 5px 2rem;
         background-color: var(--color-primary);
-        color: var(--bs-light);
+        color: var(--bs-light) !important;
 
         &:hover, &:active , &:focus {
             background-color: var(--color-primary_hover);
@@ -31,7 +36,6 @@
     &--dark {
         color: var(--bs-light) !important;
         background-color: var(--color-dark);
-        padding: 6px 0;
         
         &:hover, &:focus {
             background-color: var(--color-primary);
@@ -42,7 +46,10 @@
         background-color: var(--bs-light);
         color: var(--bs-dark);
 
-        // &:hover {}
+        &.active {
+            background-color: var(--color-primary);
+            color: var(--bs-light);
+        }
     }
 
     &--hover-dark:hover, &--hover-dark:focus {
@@ -74,6 +81,11 @@
 
     &--block {
         display: block;
+        width: 100%;
+    }
+
+    &--flex {
+        display: flex;
         width: 100%;
     }
 

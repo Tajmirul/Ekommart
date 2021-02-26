@@ -1,30 +1,29 @@
 $(document).ready(function () {
 
-    //     /* magnificPopup img view */
-    //     $('.popup-image').magnificPopup({
-    //         type: 'image',
-    //         gallery: {
-    //             enabled: true
-    //         }
-    //     });
+    /* magnificPopup img view */
+    $('.image-popup__large').magnificPopup({
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
+    });
 
-    //     /* magnificPopup video view */
-    //     $('.popup-video').magnificPopup({
-    //         type: 'iframe'
-    //     });
-    if ($('.mixitup-container')) {
-        var mixer = mixitup('.mixitup-container');
+    $('.image-popup__image').zoom();
+
+    if (Boolean($('#rating'))) {
+        $('#rating').barrating({
+            theme: 'fontawesome-stars'
+        });
     }
 
-    //     //for menu active class
-    //     $('.portfolio-menu button').on('click', function (event) {
-    //         $(this).siblings('.active').removeClass('active');
-    //         $(this).addClass('active');
-    //         event.preventDefault();
-    //     });
+    /* magnificPopup video view */
+    // $('.popup-video').magnificPopup({
+    //     type: 'iframe',
+    // });
 
-    //     // WOW active
-    //     new WOW().init();
+    if (Boolean($('.mixitup-container')[0])) {
+        var mixer = mixitup('.mixitup-container');
+    }
 
     // slick slider for banner 
     $('.slider--banner').slick({
@@ -42,10 +41,26 @@ $(document).ready(function () {
         ]
     });
 
+    $('.popup-image-container').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.popup-image-container-nav'
+    });
+
+    $('.popup-image-container-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.popup-image-container',
+        centerMode: true,
+        focusOnSelect: true
+    });
+
     // my code ----------------------------------------------------------------------
     $.each($('[data-bg-img]'), (index, item) => {
         $(item).css('background-image', 'url(' + $(item).data('bgImg') + ')')
-    })
+    });
 
     //     // preloader
     //     $(".preloader").animate({

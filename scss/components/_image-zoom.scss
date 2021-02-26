@@ -1,0 +1,31 @@
+.popup-image-container {
+}
+.image-popup {
+    position: relative;
+
+    &__image {
+        width: 100%;
+    }
+
+    &__large {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        border-radius: 50%;
+        background-color: #e8e8e8;
+        font-size: 1.8rem;
+        height: 5rem;
+        width: 5rem;
+        border: 1px solid var(--bs-white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--bs-dark);
+
+        &:hover {
+            color: var(--color-primary);
+            border-color: var(--color-primary);
+        }
+    }
+}
+

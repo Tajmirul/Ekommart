@@ -41,7 +41,7 @@
 .text-animate {
     a, span {
         background-image: linear-gradient(to right, #000 0, #000 100%);
-        background-position: center;
+        background-position: left;
         background-repeat: no-repeat;
         background-size: 0 100%;
         transition: background 0.2s;
@@ -85,4 +85,14 @@
     img {
         width: 3rem;
     }
+}
+
+.stock-status {
+    border-radius: 3px;
+    background-color: var(--bs-success);
+    color: var(--bs-light);
+    font-weight: 500;
+    font-size: 1.4rem;
+    display: inline-block;
+    padding: 0 1rem;
 }
