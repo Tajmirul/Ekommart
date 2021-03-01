@@ -1,0 +1,15 @@
+.side-bar {
+    ul {
+        li {
+            a {
+                font-size: 1.4rem;
+                padding: 3px 0;
+                color: var(--bs-dark);
+
+                &:hover {
+                    color: var(--color-primary);
+                }
+            }
+        }
+    }
+}

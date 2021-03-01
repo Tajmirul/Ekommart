@@ -108,4 +108,13 @@
         align-items: center;
         justify-content: center;
     }
+
+    &--filter {
+        border: 2px solid var(--color-border);
+        border-radius: 0;
+
+        &:hover, &:focus, &.active {
+            border-color: var(--color-primary);
+        }
+    }
 }

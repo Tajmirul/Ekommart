@@ -57,6 +57,36 @@ $(document).ready(function () {
         focusOnSelect: true
     });
 
+    if (Boolean($('.no-ui-slider'))) {
+        var sliders = $('.no-ui-slider');
+
+        $.each(sliders, function(index, slider) {
+            noUiSlider.create(slider, {
+                start: [20, 80],
+                connect: true,
+                margin: 10,
+                step: 5,
+                range: {
+                    'min': 0,
+                    'max': 100
+                }
+            });
+
+            slider.noUiSlider.on('update', function (values, handle) {
+                let [min, max] = values;
+
+                min = Math.trunc(min)
+                max = Math.trunc(max)
+                
+                $('.price-min').text(min);
+                $('.price-max').text(max);
+
+                $('.price-min').val(min);
+                $('.price-max').val(max);
+            });
+        });
+    }
+
     // my code ----------------------------------------------------------------------
     $.each($('[data-bg-img]'), (index, item) => {
         $(item).css('background-image', 'url(' + $(item).data('bgImg') + ')')

@@ -1,33 +1,33 @@
 // font sizes ------------------------------------
-.fz-extra-small{ font-size: 1.2rem; }
-.fz-small{ font-size: 1.4rem; }
-.fz-normal{ font-size: 1.6rem; }
-.fz-large{ font-size: 2rem; }
-.fz-extra-large{ font-size: 2.4rem; }
+.fz-extra-small{ font-size: 1.2rem !important; }
+.fz-small{ font-size: 1.4rem !important; }
+.fz-normal{ font-size: 1.6rem !important; }
+.fz-large{ font-size: 2rem !important; }
+.fz-extra-large{ font-size: 2.4rem !important; }
 // colors ------------------------------------
 
-.text-black{ color: var(--color-black); }
-.text-theme{ color: var(--color-primary); }
+.text-black{ color: var(--color-black) !important; }
+.text-theme{ color: var(--color-primary) !important; }
 
-.facebook {background-color: var(--facebook); }
-.twitter {background-color: var(--twitter); }
-.linkedIn {background-color: var(--linkedIn); }
-.skype {background-color: var(--skype); }
+.facebook {background-color: var(--facebook) !important; }
+.twitter {background-color: var(--twitter) !important; }
+.linkedIn {background-color: var(--linkedIn) !important; }
+.skype {background-color: var(--skype) !important; }
 .youtube { background-color: var(--youtube);}
 
-.hover-text-black:hover{ color: var(--color-black); }
-.hover-text-dark:hover{ color: var(--color-dark); }
-.hover-text-white:hover{ color: var(--color-white); }
-.hover-text-theme:hover{ color: var(--color-theme); }
+.hover-text-black:hover{ color: var(--color-black) !important; }
+.hover-text-dark:hover{ color: var(--color-dark) !important; }
+.hover-text-white:hover{ color: var(--color-white) !important; }
+.hover-text-theme:hover{ color: var(--color-theme) !important; }
 
-.bg-black{ background-color: var(--color-black); }
-.bg-theme{ background-color: var(--color-theme); }
+.bg-black{ background-color: var(--color-black) !important; }
+.bg-theme{ background-color: var(--color-theme) !important; }
 
-.hover-bg-dark:hover{ background-color: var(--color-dark); }
-.hover-bg-black:hover{ background-color: var(--color-black); }
-.hover-bg-white:hover{ background-color: var(--color-white); }
-.hover-bg-theme:hover{ background-color: var(--color-theme); }
+.hover-bg-dark:hover{ background-color: var(--color-dark) !important; }
+.hover-bg-black:hover{ background-color: var(--color-black) !important; }
+.hover-bg-white:hover{ background-color: var(--color-white) !important; }
+.hover-bg-theme:hover{ background-color: var(--color-theme) !important; }
 
-.l-height-small { line-height: 136%; }
-.list-style-disk li { list-style-type: disc; }
-.overflow-x-hidden { overflow-x: hidden;}
+.l-height-small { line-height: 136% !important; }
+.list-style-disk li { list-style-type: disc !important; }
+.overflow-x-hidden { overflow-x: hidden !important; }
