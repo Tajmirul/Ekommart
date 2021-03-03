@@ -26,10 +26,22 @@
         font-size: 1.8rem;
         color: var(--bs-dark);
         background-color: var(--bs-light);
+        border: 2px solid transparent;
 
         &:hover, &:focus {
             background-color: var(--color-primary);
             color: var(--bs-light);
+        }
+
+        &--theme {
+            background-color: var(--color-primary);
+            color: var(--bs-light);
+
+            &:hover {
+                color: var(--bs-dark);
+                background-color: transparent;
+                border-color: var(--color-primary);
+            }
         }
     }
 

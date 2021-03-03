@@ -147,9 +147,9 @@ $(document).ready(function () {
 
     $('.popup__open').click(function () {
         $('.all-popup').fadeIn(200)
-        setInterval(() => {
+        setTimeout(() => {
             $($(this).data('popup')).fadeIn(200)
-        }, 200);
+        }, 1000);
     })
 
     $('.popup__close, .overlay').click(function () {

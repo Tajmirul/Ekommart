@@ -156,221 +156,34 @@
     </header>
 
     <main>
-        <section class="banner banner--small">
-            <h3 class="heading heading--secondary">Search Results for: man</h3>
-        </section>
-
-        <section class="search pt-70">
-            <div class="container overflow-hidden">
+        <section class="pt-5">
+            <div class="container">
                 <div class="row gx-5">
-                    <div class="col-lg-3">
-                        <div class="side-bar">
-                            <div class="mb-5">
-                                <h6 class="heading heading--tertiary pb-25 mb-25 border-bottom">Product Categories</h6>
-                                
-                                <ul>
-                                    <li><a href="#">Beauty & Health</a></li>
-                                    <li><a href="#">Clothing</a></li>
-                                    <li><a href="#">Electronics & Computers</a></li>
-                                    <li><a href="#">Food & Grocery</a></li>
-                                    <li><a href="#">Furniture</a></li>
-                                    <li><a href="#">Garden & Kitchen</a></li>
-                                    <li><a href="#">Jewelry</a></li>
-                                    <li><a href="#">Marketplace</a></li>
-                                    <li><a href="#">Shoes</a></li>
-                                    <li><a href="#">Sports & Outdoors</a></li>
-                                    <li><a href="#">T-Shirts</a></li>
-                                    <li><a href="#">Tools & Parts</a></li>
-                                    <li><a href="#">Toys</a></li>
-                                    <li><a href="#">Watch</a></li>
-                                </ul>
-                            </div>
-
-                            <form action="" method="GET" class="mb-5">
-                                <h6 class="heading heading--tertiary pb-25 mb-25 border-bottom">Filter by price</h6>
-
-                                <div class="no-ui-slider"></div>
-
-                                <div class="pt-5 d-flex align-items-center justify-content-between">
-                                    <button class="button button--theme button--tiny bg-theme py-2" type="submit">Filter</button>
-
-                                    <p class="mb-0 fz-small">
-                                        <input type="hidden" name="price-min" class="price-min">
-                                        <input type="hidden" name="price-max" class="price-max">
-
-                                        $<span class="price-min"></span> &nbsp;-&nbsp; 
-                                        $<span class="price-max"></span>
-                                    </p>
-                                </div>
-                            </form>
-
-                            <div>
-                                <h6 class="heading heading--tertiary pb-25 mb-25 border-bottom">Filter by Size</h6>
-
-                                <form action="" method="GET" name="size" class="d-flex">
-                                    <button type="submit" class="button button--icon button--filter me-3">SM</button>
-                                    <button type="submit" class="button button--icon button--filter me-3">LG</button>
-                                    <button type="submit" class="button button--icon button--filter me-3">XL</button>
-                                    <button type="submit" class="button button--icon button--filter me-3">XXL</button>
-                                </form>
-                            </div>
-                        </div>
-                        <!-- end of side bar -->
+                    <div class="col-md-4 offset-md-2">
+                        <form action="" method="GET">
+                            <h4 class="heading heading--secondary mb-5 text-center">SIGN UP</h4>
+                            <input type="text" name="first-name" placeholder="First Name" class="w-100 mb-4">
+                            <input type="text" name="last-name" placeholder="Last Name" class="w-100 mb-4">
+                            <input type="email" name="email" placeholder="Email" class="w-100 mb-4">
+                            <input type="number" name="number" placeholder="Phone Number" class="w-100 mb-4">
+                            <input type="password" name="password" placeholder="Password" class="w-100 mb-4">
+                            <input type="password" name="confirm-password" placeholder="Confirm Password" class="w-100 mb-4">
+                            <button type="submit" class="button button--secondary button--secondary--theme button--block rounded-0">Submit</button>
+                        </form>
                     </div>
                     <!-- end of col -->
-                    <div class="col-lg-9">
-                        <div class="pb-4 mb-4 border-bottom d-flex align-items-center justify-content-between">
-                            <p class="mb-0 fz-extra-small">Showing all 4 results</p>
-                            
-                            <div class="fz-small">
-                                Short by
-                                <select name="orderby" aria-label="Shop order" class="ms-4 py-2">
-                                    <option value="relevance" selected="selected">Relevance</option>
-                                    <option value="popularity">popularity</option>
-                                    <option value="rating">average rating</option>
-                                    <option value="date">latest</option>
-                                    <option value="price">price: low to high</option>
-                                    <option value="price-desc">price: high to low</option>
-                                </select>
-                            </div>
-                        </div>
 
-                        <div class="row g-4">
-                            <div class="col-md-4">
-                                <div class="cart cart--2">
-                                    <div class="cart__image">
-                                        <a href="single-product.html" class="d-block h-100">
-                                            <img src="img/products/product-1.jpg" alt="" class="w-100 h-100">
-                                        </a>
-                                        <a href="#" class="button button--dark button--block">Add To Cart</a>
-        
-                                        <div class="cart__icon-buttons">
-                                            <a href="#" class="button button--icon button--light button--hover-dark"><i class="fal fa-heart"></i></a>
-                                            <button class="button button--icon button--light button--hover-dark popup__open" data-popup="#product-view"><i class="fal fa-eye"></i></button>
-                                        </div>
-                                    </div>
-                                    <div class="cart__content">
-                                        <a href="#" class="fz-extra-small custom-link">T-Shirts</a>
-                                        <h6 class="heading heading--tertiary--2 my-2"><a href="single-product.html">Dead Men Women's T-Shirt</a>
-                                        </h6>
-                                        <p class="mb-0 text-danger fw-bold">$108.08 – $124.52</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end of col -->
-                            <div class="col-md-4">
-                                <div class="cart cart--2">
-                                    <div class="cart__image">
-                                        <a href="single-product.html" class="d-block h-100">
-                                            <img src="img/products/product-6.jpg" alt="" class="w-100 h-100">
-                                        </a>
-                                        <a href="#" class="button button--dark button--block">Add To Cart</a>
-        
-                                        <div class="cart__icon-buttons">
-                                            <a href="#" class="button button--icon button--light button--hover-dark"><i class="fal fa-heart"></i></a>
-                                            <button class="button button--icon button--light button--hover-dark popup__open" data-popup="#product-view"><i class="fal fa-eye"></i></button>
-                                        </div>
-                                    </div>
-                                    <div class="cart__content">
-                                        <a href="#" class="fz-extra-small custom-link">T-Shirts</a>
-                                        <h6 class="heading heading--tertiary--2 my-2"><a href="single-product.html">Dead Men Women's T-Shirt</a>
-                                        </h6>
-                                        <p class="mb-0 text-danger fw-bold">$108.08 – $124.52</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end of col -->
-                            <div class="col-md-4">
-                                <div class="cart cart--2">
-                                    <div class="cart__image">
-                                        <a href="single-product.html" class="d-block h-100">
-                                            <img src="img/products/product-2.jpg" alt="" class="w-100 h-100">
-                                        </a>
-                                        <a href="#" class="button button--dark button--block">Add To Cart</a>
-        
-                                        <div class="cart__icon-buttons">
-                                            <a href="#" class="button button--icon button--light button--hover-dark"><i class="fal fa-heart"></i></a>
-                                            <button class="button button--icon button--light button--hover-dark popup__open" data-popup="#product-view"><i class="fal fa-eye"></i></button>
-                                        </div>
-                                    </div>
-                                    <div class="cart__content">
-                                        <a href="#" class="fz-extra-small custom-link">T-Shirts</a>
-                                        <h6 class="heading heading--tertiary--2 my-2"><a href="single-product.html">Dead Men Women's T-Shirt</a>
-                                        </h6>
-                                        <p class="mb-0 text-danger fw-bold">$108.08 – $124.52</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end of col -->
-                            <div class="col-md-4">
-                                <div class="cart cart--2">
-                                    <div class="cart__image">
-                                        <a href="single-product.html" class="d-block h-100">
-                                            <img src="img/products/product-3.jpg" alt="" class="w-100 h-100">
-                                        </a>
-                                        <a href="#" class="button button--dark button--block">Add To Cart</a>
-        
-                                        <div class="cart__icon-buttons">
-                                            <a href="#" class="button button--icon button--light button--hover-dark"><i class="fal fa-heart"></i></a>
-                                            <button class="button button--icon button--light button--hover-dark popup__open" data-popup="#product-view"><i class="fal fa-eye"></i></button>
-                                        </div>
-                                    </div>
-                                    <div class="cart__content">
-                                        <a href="#" class="fz-extra-small custom-link">T-Shirts</a>
-                                        <h6 class="heading heading--tertiary--2 my-2"><a href="single-product.html">Dead Men Women's T-Shirt</a>
-                                        </h6>
-                                        <p class="mb-0 text-danger fw-bold">$108.08 – $124.52</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end of col -->
-                            <div class="col-md-4">
-                                <div class="cart cart--2">
-                                    <div class="cart__image">
-                                        <a href="single-product.html" class="d-block h-100">
-                                            <img src="img/products/product-4.jpg" alt="" class="w-100 h-100">
-                                        </a>
-                                        <a href="#" class="button button--dark button--block">Add To Cart</a>
-        
-                                        <div class="cart__icon-buttons">
-                                            <a href="#" class="button button--icon button--light button--hover-dark"><i class="fal fa-heart"></i></a>
-                                            <button class="button button--icon button--light button--hover-dark popup__open" data-popup="#product-view"><i class="fal fa-eye"></i></button>
-                                        </div>
-                                    </div>
-                                    <div class="cart__content">
-                                        <a href="#" class="fz-extra-small custom-link">T-Shirts</a>
-                                        <h6 class="heading heading--tertiary--2 my-2"><a href="single-product.html">Dead Men Women's T-Shirt</a>
-                                        </h6>
-                                        <p class="mb-0 text-danger fw-bold">$108.08 – $124.52</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end of col -->
-                            <div class="col-md-4">
-                                <div class="cart cart--2">
-                                    <div class="cart__image">
-                                        <a href="single-product.html" class="d-block h-100">
-                                            <img src="img/products/product-5.jpg" alt="" class="w-100 h-100">
-                                        </a>
-                                        <a href="#" class="button button--dark button--block">Add To Cart</a>
-        
-                                        <div class="cart__icon-buttons">
-                                            <a href="#" class="button button--icon button--light button--hover-dark"><i class="fal fa-heart"></i></a>
-                                            <button class="button button--icon button--light button--hover-dark popup__open" data-popup="#product-view"><i class="fal fa-eye"></i></button>
-                                        </div>
-                                    </div>
-                                    <div class="cart__content">
-                                        <a href="#" class="fz-extra-small custom-link">T-Shirts</a>
-                                        <h6 class="heading heading--tertiary--2 my-2"><a href="single-product.html">Dead Men Women's T-Shirt</a>
-                                        </h6>
-                                        <p class="mb-0 text-danger fw-bold">$108.08 – $124.52</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end of col -->
-                        </div>
+                    <div class="col-md-4">
+                        <form action="" method="GET">
+                            <h4 class="heading heading--secondary mb-5 text-center">SIGN IN</h4>
+                            <input type="email" name="email" placeholder="Email" class="w-100 mb-4">
+                            <input type="password" name="password" placeholder="Password" class="w-100 mb-4">
+                            <button type="submit" class="button button--secondary button--secondary--theme button--block rounded-0">Submit</button>
+                        </form>
                     </div>
+                    <!-- end of col -->
                 </div>
+                <!-- end of row -->
             </div>
             <!-- end of container -->
         </section>
