@@ -79,6 +79,22 @@
                                         <li><a href="#">Pages</a></li>
                                         <li><a href="#">Contact</a></li>
                                     </ul>
+
+                                    <ul class="nav-bar__icons">
+                                        <li><a href="/profile.html"><i class="far fa-user"></i></a></li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="far fa-heart"></i>
+                                                <span class="icon-button-number">3</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="open-cart-sidebar">
+                                                <i class="far fa-shopping-basket"></i>
+                                                <span class="icon-button-number">5</span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                                 <!-- end of nav-bar menu -->
                                 <div class="nav-bar__search-box">
@@ -167,8 +183,10 @@
                             <input type="email" name="email" placeholder="Email" class="w-100 mb-4">
                             <input type="number" name="number" placeholder="Phone Number" class="w-100 mb-4">
                             <input type="password" name="password" placeholder="Password" class="w-100 mb-4">
-                            <input type="password" name="confirm-password" placeholder="Confirm Password" class="w-100 mb-4">
-                            <button type="submit" class="button button--secondary button--secondary--theme button--block rounded-0">Submit</button>
+                            <input type="password" name="confirm-password" placeholder="Confirm Password"
+                                class="w-100 mb-4">
+                            <button type="submit"
+                                class="button button--secondary button--secondary--theme button--block rounded-0">Submit</button>
                         </form>
                     </div>
                     <!-- end of col -->
@@ -178,7 +196,8 @@
                             <h4 class="heading heading--secondary mb-5 text-center">SIGN IN</h4>
                             <input type="email" name="email" placeholder="Email" class="w-100 mb-4">
                             <input type="password" name="password" placeholder="Password" class="w-100 mb-4">
-                            <button type="submit" class="button button--secondary button--secondary--theme button--block rounded-0">Submit</button>
+                            <button type="submit"
+                                class="button button--secondary button--secondary--theme button--block rounded-0">Submit</button>
                         </form>
                     </div>
                     <!-- end of col -->
@@ -323,6 +342,77 @@
             </div>
         </div>
         <!-- end of product view popup -->
+    </div>
+
+    <div class="cart-sidebar">
+        <div class="overlay"></div>
+
+        <div class="cart-sidebar-container">
+            <div class="cart-sidebar__item">
+                <div class="row gx-0 align-items-center">
+                    <div class="col-auto"><button class="button button--icon"><i class="fal fa-times"></i></button>
+                    </div>
+                    <div class="col-2">
+                        <img src="img/products/product-1.jpg" alt="Product Name" style="height: 66px;">
+                    </div>
+
+                    <div class="col">
+                        <p class="mb-0"><a href="#" class="normal-link">Lorem ipsum dolor sit.</a></p>
+                        <span class="text-muted">Quantity: 4</span>
+                        <p class="mb-0">Price: <span class="text-theme">$400</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of item -->
+            <div class="cart-sidebar__item">
+                <div class="row gx-0 align-items-center">
+                    <div class="col-auto"><button class="button button--icon"><i class="fal fa-times"></i></button>
+                    </div>
+                    <div class="col-2">
+                        <img src="img/products/product-2.jpg" alt="Product Name" style="height: 66px;">
+                    </div>
+
+                    <div class="col">
+                        <p class="mb-0"><a href="#" class="normal-link">Lorem ipsum dolor sit.</a></p>
+                        <span class="text-muted">Quantity: 4</span>
+                        <p class="mb-0">Price: <span class="text-theme">$400</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of item -->
+            <div class="cart-sidebar__item">
+                <div class="row gx-0 align-items-center">
+                    <div class="col-auto"><button class="button button--icon"><i class="fal fa-times"></i></button>
+                    </div>
+                    <div class="col-2">
+                        <img src="img/products/product-3.jpg" alt="Product Name" style="height: 66px;">
+                    </div>
+
+                    <div class="col">
+                        <p class="mb-0"><a href="#" class="normal-link">Lorem ipsum dolor sit.</a></p>
+                        <span class="text-muted">Quantity: 4</span>
+                        <p class="mb-0">Price: <span class="text-theme">$400</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of item -->
+            <div class="cart-sidebar__item">
+                <div class="row gx-0 align-items-center">
+                    <div class="col-auto"><button class="button button--icon"><i class="fal fa-times"></i></button>
+                    </div>
+                    <div class="col-2">
+                        <img src="img/products/product-4.jpg" alt="Product Name" style="height: 66px;">
+                    </div>
+
+                    <div class="col">
+                        <p class="mb-0"><a href="#" class="normal-link">Lorem ipsum dolor sit.</a></p>
+                        <span class="text-muted">Quantity: 4</span>
+                        <p class="mb-0">Price: <span class="text-theme">$400</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of item -->
+        </div>
     </div>
 
     <!-- ALL JS -->

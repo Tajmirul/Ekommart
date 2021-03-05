@@ -1,0 +1,21 @@
+.cart-sidebar-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: #fff;
+    max-width: 44rem;
+    overflow-y: auto;
+    transition: .3s;
+    // width: 96%;
+    width: 0;
+}
+
+.cart-sidebar {
+    display: none;
+
+    &__item {
+        margin: 1rem 0;
+    }
+}
