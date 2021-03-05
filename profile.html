@@ -108,7 +108,9 @@
                 <div class="nav-bar__mobile d-lg-none">
                     <div class="container overflow-x-hidden">
                         <div class="nav-bar__mobile--header">
-                            <button class="button button--icon button--light justify-content-start mobile-navigation-open"><i class="fal fa-bars"></i></button>
+                            <button
+                                class="button button--icon button--light justify-content-start mobile-navigation-open"><i
+                                    class="fal fa-bars"></i></button>
 
                             <div class="logo-area border-end-0">
                                 <a href="/"><img src="img/logo.svg" alt="Logo" class="logo"></a>
@@ -154,11 +156,149 @@
     </header>
 
     <main>
-        <section class="profile-section">
+        <section class="profile-section mt-4">
             <div class="container">
-                <div class="row">
+                <div class="row g-5">
                     <div class="col-md-3">
-                        
+                        <ul class="nav flex-column" id="profile-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a href="#" role="button" class="nav-link button button--link button--block active"
+                                    id="dashboard-tab" data-bs-toggle="tab" data-bs-target="#dashboard" type="button"
+                                    role="tab" aria-controls="dashboard" aria-selected="true">Dashboard <i
+                                        class="fal fa-tachometer-alt-fast"></i></a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a href="#" role="button" class="nav-link button button--link button--block"
+                                    id="orders-tab" data-bs-toggle="tab" data-bs-target="#orders" type="button"
+                                    role="tab" aria-controls="orders" aria-selected="false">Your Orders <i
+                                        class="fal fa-shopping-basket"></i></a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a href="#" role="button" class="nav-link button button--link button--block"
+                                    id="account-details-tab" data-bs-toggle="tab" data-bs-target="#account-details"
+                                    type="button" role="tab" aria-controls="account-details"
+                                    aria-selected="false">Account Details <i class="fal fa-info-circle"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link button button--link button--block">Log Out <i
+                                        class="fal fa-sign-out"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end of col -->
+
+                    <div class="col-md-9">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="dashboard" role="tabpanel"
+                                aria-labelledby="dashboard-tab">
+                                <h5 class="heading heading--tertiary">Hello John,</h5> <br>
+                                <p>From your account dashboard you can view your <a href="#">recent orders</a>, manage
+                                    your <a href="#">shipping and billing addresses</a>, and edit your password and
+                                    account details.</p>
+                            </div>
+                            <!-- end of tab pane -->
+
+                            <div class="tab-pane fade" id="orders" role="tabpanel" aria-labelledby="orders-tab">
+                                <div class="table-responsive">
+                                    <table class="table table-borderless table-hover table-light fz-small">
+                                        <thead>
+                                            <tr>
+                                                <th>Order ID</th>
+                                                <th>Name</th>
+                                                <th>Status</th>
+                                                <th>total</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>12323</td>
+                                                <td>Dead Men women's T-Shirt</td>
+                                                <td>On hold</td>
+                                                <td>$124.52 for 1 item</td>
+                                                <td>
+                                                    <form method="POST">
+                                                        <button type="submit"
+                                                            class="button button--tiny button--icon"><i
+                                                                class="fal fa-eye"></i></button>
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>12323</td>
+                                                <td>Dead Men women's T-Shirt</td>
+                                                <td>On hold</td>
+                                                <td>$124.52 for 1 item</td>
+                                                <td>
+                                                    <form method="POST">
+                                                        <button type="submit"
+                                                            class="button button--tiny button--icon"><i
+                                                                class="fal fa-eye"></i></button>
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>12323</td>
+                                                <td>Dead Men women's T-Shirt</td>
+                                                <td>On hold</td>
+                                                <td>$124.52 for 1 item</td>
+                                                <td>
+                                                    <form method="POST">
+                                                        <button type="submit"
+                                                            class="button button--tiny button--icon"><i
+                                                                class="fal fa-eye"></i></button>
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- end of tab pane -->
+
+                            <div class="tab-pane fade " id="account-details" role="tabpanel"
+                                aria-labelledby="account-details-tab">
+                                <form action="#" method="POST">
+                                    <div class="row g-3">
+                                        <div class="col-sm-6">
+                                            <input type="text" name="first-name" placeholder="First Name" class="w-100">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="text" name="last-name" placeholder="Last Name" class="w-100">
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <input type="text" name="user_name" placeholder="User Name" class="w-100">
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <input type="email" name="email" placeholder="Email" class="w-100">
+                                        </div>
+                                        <div class="col-12">
+                                            <fieldset>
+                                                <legend>Change Password</legend>
+
+                                                <div class="row g-3">
+                                                    <div class="col-12">
+                                                        <input type="password" name="current-password" placeholder="Current Password" class="w-100">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <input type="password" name="new-password" placeholder="New Password" class="w-100">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <input type="password" name="confirm-password" placeholder="Confirm Password" class="w-100">
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="button button--theme">Update Profile</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- end of tab pane -->
+                            
+                        </div>
                     </div>
                     <!-- end of col -->
                 </div>
@@ -168,7 +308,7 @@
         </section>
     </main>
 
-    
+
     <footer class="footer-section pt-70">
         <div class="container overflow-x-hidden">
             <div class="row g-5">

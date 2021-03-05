@@ -131,3 +131,7 @@
 .noUi-handle:after, .noUi-handle:before {
     display: none;
 }
+
+.table>:not(caption)>*>* {
+    padding: 1rem;
+}

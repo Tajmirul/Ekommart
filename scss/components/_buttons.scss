@@ -28,7 +28,7 @@
         background-color: var(--bs-light);
         border: 2px solid transparent;
 
-        &:hover, &:focus {
+        &:hover, &:focus, &.active {
             background-color: var(--color-primary);
             color: var(--bs-light);
         }
@@ -127,6 +127,20 @@
 
         &:hover, &:focus, &.active {
             border-color: var(--color-primary);
+        }
+    }
+
+    &--link {
+        color: var(--bs-dark);
+        background-color: var(--bs-white);
+        font-size: 1.4rem;
+        text-align: initial;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+
+        &:hover, &:focus, &.active {
+            color: var(--color-primary);
         }
     }
 }
